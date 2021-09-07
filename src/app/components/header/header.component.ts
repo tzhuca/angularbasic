@@ -19,8 +19,10 @@ export class HeaderComponent implements OnInit {
     alert("clicked!");
   }
   ngOnInit(): void {
-  }
 
+    console.log(this.today);
+  }
+  public today=new Date();
 
   keyUpAction(event){
     console.log(event)
