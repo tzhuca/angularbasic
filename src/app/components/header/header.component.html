@@ -32,3 +32,17 @@
 
 <li *ngSwitchDefault>nothing</li>
 </ul>
+
+
+<!-- 表单事件  -->
+<input type="text" (keyup)="keyUpAction($event)"/>
+
+<br>
+
+<!-- 双向数据绑定 [(ngModel)]  引入：FormsModule -->
+<input   type="text" [(ngModel)]="inputValue">
+{{inputValue}}
+
+<!-- [ngClass]、[ngStyle]  -->
+
+<button class="blueClass" type="submit" [ngStyle]="{'background-color':'green'}">Button</button>
