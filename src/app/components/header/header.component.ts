@@ -8,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   constructor() { }
+  
+  title:string = "this is header"
+  list:string [] =["A","B","C"]
 
+  show:boolean = true
+  role:number = 1 
+  getData(){
+    console.log("clicked!");
+    alert("clicked!");
+  }
   ngOnInit(): void {
   }
 

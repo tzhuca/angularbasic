@@ -1,1 +1,34 @@
-<p>header works!</p>
+<h1>
+    {{title}}
+</h1>
+
+<!-- 绑定属性  -->
+<div [innerHTML]='title' style="color:grey; background-color:aqua">
+
+</div>
+
+<!-- 执行事件(click)  -->
+
+<button class="button" (click)="getData()">
+    点击按钮
+</button>
+<!-- 数据循环*ngFor -->
+
+<ul>
+    <li *ngFor="let item of list">
+    {{item}}
+    </li>
+    </ul>
+
+<!-- 条件判断*ngIf  -->
+
+<p *ngIf="!show">show me the text</p>
+
+
+<!-- *ngSwitch  -->
+<ul [ngSwitch]="role">
+<li *ngSwitchCase="1">admin</li>
+<li *ngSwitchCase="2">reader</li>
+
+<li *ngSwitchDefault>nothing</li>
+</ul>
